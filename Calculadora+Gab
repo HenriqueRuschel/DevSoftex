@@ -1,0 +1,17 @@
+valor1=float(input("insira o valor 1 "))
+valor2=float(input("insira o valor 2 "))
+operacao=input("qual a operação desejada ")
+if(operacao == "+"):
+    resultado=valor1+valor2
+    print("o resultado da operação é ", resultado)
+elif(operacao == "-"):
+    resultado=valor1-valor2
+    print("o resultado da operação é ", resultado)
+elif(operacao == "*"):
+    resultado=valor1*valor2
+    print("o resultado da operação é ", resultado)
+elif(operacao == "/"):
+    resultado=valor1/valor2
+    print("o resultado da operação é ", resultado)
+else: 
+    print("o resultado é zero")
