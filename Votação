@@ -1,0 +1,6 @@
+class colocacao(enum.Enum):
+    primeiro = 50
+    segundo = 30
+    terceiro = 10
+    outro = 0
+    
