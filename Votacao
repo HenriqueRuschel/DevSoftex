@@ -1,0 +1,37 @@
+candidato_x = 0
+candidato_y = 0
+candidato_z = 0
+brancos = 0
+nulos = 0
+
+while True:
+    perguta = input("Deseja realizar uma nova votação? ")
+    if(perguta == "Sim"):
+        voto = int(input("Qual a chapa do seu candidato? "))
+        if(voto == 889):
+            candidato_x = candidato_x +1
+        elif(voto == 847):
+            candidato_y = candidato_y +1
+        elif(voto == 515):
+            candidato_z = candidato_z +1
+        elif(voto == 0):
+            brancos = brancos +1
+        else:
+            nulos = nulos +1
+
+    else: 
+        if(candidato_x>candidato_y and candidato_x>candidato_z):
+            print("O candidato x foi o vencedor e obeteve ", candidato_x, "votos")
+        elif(candidato_y>candidato_x and candidato_y>candidato_z):
+            print("O candidato y foi o vencedor e obeteve ", candidato_y, "votos")
+        elif(candidato_z>candidato_x and candidato_z>candidato_y):
+            print("O candidato z foi o vencedor e obeteve ", candidato_z, "votos")
+        else:
+            print("Não houveram ganhadores na votação")
+        print("candidato x: ", candidato_x)
+        print("candidato y: ", candidato_y)
+        print("candidato z: ", candidato_z)
+        print("brancos: ", brancos)
+        print("nulos: ", nulos)
+
+        break
