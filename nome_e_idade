@@ -1,0 +1,8 @@
+nome = input("Por favor, insira seu nome completo ")
+while True:
+    ano = int(input("Por favor, insira o seu ano de nascimento "))
+    if(ano>=1922 and ano<=2021):
+        print("seu nome é ", nome, "sua idade é ", 2022-ano)
+        break
+    else:
+        print("valor inválido, por favor, insira um ano válido")
